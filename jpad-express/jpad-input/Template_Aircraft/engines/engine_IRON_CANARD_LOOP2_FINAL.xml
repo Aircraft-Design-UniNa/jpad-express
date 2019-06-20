@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jpad_config>
+	<engine id="IRON Engine" type="TURBOPROP" database="EngineDatabaseUSF.xlsx">
+		<dimensions>
+			<length calculate="FALSE"  unit="m">5.28</length>
+			<propeller_diameter unit="ft">14.00</propeller_diameter>
+		</dimensions>
+		<specifications>
+			<number_of_propeller_blades>12</number_of_propeller_blades>
+			<eta_propeller>1.0</eta_propeller>
+			<static_power unit="hp">7450.82</static_power>
+			<dry_mass calculate="FALSE" unit="kg">2809</dry_mass>
+		</specifications>
+	</engine>
+</jpad_config>

@@ -1,0 +1,59 @@
+buildscript {
+	repositories {
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
+	}
+	dependencies {
+		classpath "com.gradle:build-scan-plugin:2.2.1"
+	}
+}
+
+apply plugin: "com.gradle.build-scan"
+buildScan {
+	termsOfServiceUrl = 'https://gradle.com/terms-of-service'
+	termsOfServiceAgree = 'yes'
+}
+
+allprojects {
+
+	// Apply the java-library plugin to add support for Java Library
+	apply plugin: 'java'
+
+	// In this section you declare where to find the dependencies of your project
+	// Use jcenter for resolving your dependencies.
+	// You can declare any Maven/Ivy/file repository here.
+	repositories {
+		mavenCentral()
+		jcenter()
+		flatDir {
+			dirs "$rootDir/jpad-libs/jfreechart",
+					"$rootDir/jpad-libs/cloning",
+					"$rootDir/jpad-libs/cloning/lib",
+					"$rootDir/jpad-libs/eclipseplugins",
+					"$rootDir/jpad-libs/flanagan",
+					"$rootDir/jpad-libs/fxgraphics2d/lib",
+					"$rootDir/jpad-libs/fxyz",
+					"$rootDir/jpad-libs/gtmat",
+					"$rootDir/jpad-libs/hdf",
+					"$rootDir/jpad-libs/jfxchartext-1.0",
+					"$rootDir/jpad-libs/jim",
+					"$rootDir/jpad-libs/nebula",
+					"$rootDir/jpad-libs/tigl/win64"
+		}
+	}
+}
+
+dependencies {
+	compile project(':jpad-core-ex')
+	testCompile 'org.mockito:mockito-core:2.7.22'
+	testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: '1.7.4'
+	testCompile 'org.powermock:powermock-module-junit4:1.6.4'
+}
+
+jar {
+	manifest {
+		attributes ('Main-Class': 'org.jpad.JPAD',
+		'Class-Path': configurations.compile.collect { 'jpad-libs/' + it.getName() }.join(' '))
+	}
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jpad_config>
+	<landing_gears id="IRON Landing Gears" retractable="TRUE">
+		<global_data>
+			<gear_compression_factor unit="%">0.40</gear_compression_factor>
+			<wheeltrack unit="m">5.0</wheeltrack>
+			<nose_wheel_steering_angle unit="deg">60</nose_wheel_steering_angle>
+			<number_of_frontal_wheels>2</number_of_frontal_wheels>
+			<number_of_rear_wheels>4</number_of_rear_wheels>
+		</global_data>
+		<frontal_wheels_data>
+			<wheel_height unit="m">0.97</wheel_height>
+			<wheel_width unit="m">0.35</wheel_width>
+		</frontal_wheels_data>
+		<rear_wheels_data>
+			<wheel_height unit="m">0.97</wheel_height>
+			<wheel_width unit="m">0.35</wheel_width>
+		</rear_wheels_data>
+	</landing_gears>
+</jpad_config>

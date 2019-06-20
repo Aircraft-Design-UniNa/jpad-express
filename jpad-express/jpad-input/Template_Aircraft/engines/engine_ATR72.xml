@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpad_config>
+   <engine database="EngineDatabaseTP.xlsx"
+           id="PW-127"
+           type="TURBOPROP">
+      <dimensions>
+         <length calculate="FALSE" unit="m">2.1300</length>
+         <propeller_diameter unit="m">3.9300</propeller_diameter>
+      </dimensions>
+      <specifications>
+         <dry_mass calculate="FALSE" unit="kg">482.6223</dry_mass>
+         <static_power unit="hp">2750</static_power>
+         <number_of_propeller_blades>6</number_of_propeller_blades>
+         <eta_propeller>1.0</eta_propeller>
+      </specifications>
+   </engine>
+</jpad_config>

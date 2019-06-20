@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jpad_config>
+    <aircraft id="IRON_CANARD_LOOP2" type="TURBOPROP" regulations="FAR_25">
+		<global_data>
+			<cabin_configuration file="cabin_configuration_IRON_CANARD.xml"></cabin_configuration>
+		</global_data>
+		<fuselages>
+            <fuselage file="fuselage_IRON.xml">
+                <position>
+                    <x unit="m">0.0</x>
+                    <y unit="m">0.0</y>
+                    <z unit="m">0.0</z>
+                </position>
+            </fuselage>
+        </fuselages>
+        <lifting_surfaces>
+            <wing file="wing_IRON_CANARD_LOOP2_FINAL.xml">
+                <position>
+                    <x unit="m">20.5</x>
+                    <y unit="m">0.0</y>
+                    <z unit="m">-1.33</z>
+                </position>
+                <rigging_angle unit="deg">1</rigging_angle>
+            </wing>
+            <horizontal_tail file="htail_IRON_CANARD_LOOP2_FINAL.xml">
+                <position>
+                    <x unit="m">31.54</x>
+                    <y unit="m">0.0</y>
+                    <z unit="m">1.02</z>
+                </position>
+                <rigging_angle unit="deg">-2.0</rigging_angle>
+            </horizontal_tail>
+            <vertical_tail file="vtail_IRON_CANARD_LOOP2_FINAL.xml">
+                <position>
+                    <x unit="m">30.35</x>
+                    <y unit="m">0.0</y>
+                    <z unit="m">1.56</z>
+                </position>
+                <rigging_angle unit="deg">0.0</rigging_angle>
+            </vertical_tail>
+			<canard file="canard_IRON_CANARD_LOOP2_FINAL.xml">
+                <position>
+                    <x unit="m">5.70</x>
+                    <y unit="m">0.0</y>
+                    <z unit="m">1.75</z>
+                </position>
+                <rigging_angle unit="deg">2.0</rigging_angle>
+            </canard>
+        </lifting_surfaces>
+		<power_plant>
+            <engine file="engine_IRON_CANARD_LOOP2_FINAL.xml">
+                <position>
+                    <delta_x unit="m">-2.1</delta_x>   <!-- This delta is added to the lifting surface local x apex at y or fuselage x apex. --> 
+                    <delta_y unit="m">6.5453</delta_y> <!-- This delta is added to the lifting surface/fuselage y apex. --> 
+                    <delta_z unit="m">0.58</delta_z>    <!-- This delta is added to the lifting surface local z apex or fuselage z apex. --> 
+                </position>
+                <tilting_angle unit="deg">0.0</tilting_angle>
+				<mounting_point>HTAIL</mounting_point>
+				<nacelle file="nacelle_IRON_CANARD_LOOP2_FINAL.xml"/>
+            </engine>
+            <engine file="engine_IRON_CANARD_LOOP2_FINAL.xml">
+                <position>
+                    <delta_x unit="m">-2.1</delta_x>   <!-- This delta is added to the lifting surface local x apex at y or fuselage x apex. --> 
+                    <delta_y unit="m">-6.5453</delta_y> <!-- This delta is added to the lifting surface/fuselage y apex. --> 
+                    <delta_z unit="m">0.58</delta_z>    <!-- This delta is added to the lifting surface local z apex or fuselage z apex. --> 
+                </position>
+                <tilting_angle unit="deg">0.0</tilting_angle>
+                <mounting_point>HTAIL</mounting_point>
+				<nacelle file="nacelle_IRON_CANARD_LOOP2_FINAL.xml"/>
+            </engine>
+		</power_plant> 
+		<landing_gears file="landing_gear_IRON.xml">
+			<position>
+				<delta_x_nose unit="%">0.0809</delta_x_nose> <!-- Percentage of fuselage total length. This delta is then added to the fuselage x apex. -->  
+				<delta_x_main unit="%">0.66</delta_x_main>   <!-- Fraction of mean aerodynamic chord if mounting point is WING, nacelle length if mounting position is NACELLE, percentage of fuselage total length if mounting point is FUSELAGE. This delta is then added to the lifting surface x apex, inner nacelle x apex or fuselage x apex. -->  
+            </position>
+			<mounting_point>WING</mounting_point>
+		</landing_gears>
+		<systems primary_electrical_systems_type="AC"/> <!-- AC or DC --> 
+    </aircraft>
+</jpad_config>

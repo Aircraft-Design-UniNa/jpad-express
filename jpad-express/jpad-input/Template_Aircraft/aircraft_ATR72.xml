@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jpad_config>
+   <aircraft id="ATR-72" regulations="FAR_25" type="TURBOPROP">
+      <global_data>
+         <cabin_configuration file="cabin_configuration_ATR72.xml"/>
+      </global_data>
+	  <fuselages>
+         <fuselage file="fuselage_ATR72.xml">
+            <position>
+               <x unit="m">0.0000</x>
+               <y unit="m">0.0000</y>
+               <z unit="m">0.0000</z>
+            </position>
+         </fuselage>
+      </fuselages>
+      <lifting_surfaces>
+         <wing file="wing_ATR72.xml">
+            <position>
+               <x unit="m">10.6</x>
+               <y unit="m">0.0000</y>
+               <z unit="m">1.6</z>
+            </position>
+            <rigging_angle unit="deg">3.0000</rigging_angle>
+         </wing>
+         <vertical_tail file="vtail_ATR72.xml">
+            <position>
+               <x unit="m">22.3</x>
+               <y unit="m">0.0000</y>
+               <z unit="m">1.3</z>
+            </position>
+            <rigging_angle unit="deg">0.0000</rigging_angle>
+         </vertical_tail>
+         <horizontal_tail file="htail_ATR72.xml">
+            <position>
+               <x unit="m">26.1</x>
+               <y unit="m">0.0000</y>
+               <z unit="m">5.7374</z>
+            </position>
+            <rigging_angle unit="deg">1.0000</rigging_angle>
+         </horizontal_tail>
+      </lifting_surfaces>
+      <power_plant>
+         <engine file="engine_ATR72.xml">
+            <position>
+               <delta_x unit="m">-1.445</delta_x>  <!-- This delta is added to the lifting surface local x apex at y or fuselage x apex. --> 
+               <delta_y unit="m">3.809</delta_y>   <!-- This delta is added to the lifting surface/fuselage y apex. --> 
+               <delta_z unit="m">-0.6578</delta_z>  <!-- This delta is added to the lifting surface local z apex or fuselage z apex. --> 
+            </position>
+            <tilting_angle unit="deg">0.0000</tilting_angle>
+            <mounting_point>WING</mounting_point>
+			<nacelle file="nacelle_ATR72.xml"/>
+         </engine>
+         <engine file="engine_ATR72.xml">
+            <position>
+               <delta_x unit="m">-1.445</delta_x>  <!-- This delta is added to the lifting surface local x apex at y or fuselage x apex. --> <!-- <x unit="m">11.18</x> --> 
+               <delta_y unit="m">-3.809</delta_y>  <!-- This delta is added to the lifting surface/fuselage y apex. --> <!-- <y unit="m">5.75</y> -->
+               <delta_z unit="m">-0.6578</delta_z>  <!-- This delta is added to the lifting surface local z apex or fuselage z apex. --> <!-- <z unit="m">-2.02</z> -->
+            </position>
+            <tilting_angle unit="deg">0.0000</tilting_angle>
+            <mounting_point>WING</mounting_point>
+			<nacelle file="nacelle_ATR72.xml"/>
+         </engine>
+      </power_plant>
+      <landing_gears file="landing_gear_ATR72.xml">
+			<position>
+				<delta_x_nose unit="%">0.062</delta_x_nose>  <!-- Percentage of fuselage total length. This delta is then added to the fuselage x apex. -->  
+				<delta_x_main unit="%">0.39</delta_x_main>  <!-- Fraction of mean aerodynamic chord if mounting point is WING, nacelle length if mounting position is NACELLE, percentage of fuselage total length if mounting point is FUSELAGE. This delta is then added to the lifting surface x apex, inner nacelle x apex or fuselage x apex. --> 
+            </position>
+         <mounting_point>FUSELAGE</mounting_point>
+      </landing_gears>
+	  <systems primary_electrical_systems_type="AC"/> <!-- AC or DC --> 
+   </aircraft>
+</jpad_config>

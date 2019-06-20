@@ -1,0 +1,5 @@
+
+rootProject.name = 'JPAD'
+
+include 'JPADConfigs'
+include 'JPADCore_v2'

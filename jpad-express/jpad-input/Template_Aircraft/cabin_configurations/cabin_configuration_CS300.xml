@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jpad_config>
+    <configuration id="CS300 Cabin Configuration">
+		<global_data>
+			<design_passengers_number>140</design_passengers_number>
+			<flight_crew_number>2</flight_crew_number>
+			<classes_type>ECONOMY</classes_type>
+			<delta_x_cabin_start unit="%">0.15</delta_x_cabin_start> <!-- fuselage total length based delta -->
+			<delta_x_cabin_fwd unit="%">0.010</delta_x_cabin_fwd> <!-- cabin fwd delta, expressed in percentage of fuselage total length -->
+			<delta_x_cabin_aft unit="%">0.010</delta_x_cabin_aft> <!-- cabin aft delta, expressed in percentage of fuselage total length -->
+		</global_data>
+		<detailed_data estimate_rows_from_percentages="TRUE" estimate_class_percentages="FALSE" estimate_pitch="FALSE" estimate_width="FALSE"> <!-- Select whether estimating number of rows per classes from the design passengers number, number of columns and class percentages (TRUE), otherwise a check on design passengers number, assigned number of rows and number of columns is made. -->
+			<number_of_columns_economy_class>[2;3]</number_of_columns_economy_class>
+			<number_of_columns_business_class>[0;0]</number_of_columns_business_class>
+			<number_of_columns_first_class>[0;0]</number_of_columns_first_class>
+			<percentage_economy_class unit="%">100.0</percentage_economy_class>
+			<percentage_business_class unit="%">0.0</percentage_business_class>
+			<percentage_first_class unit="%">0.0</percentage_first_class>
+			<number_of_rows_economy_class>28</number_of_rows_economy_class>
+			<number_of_rows_business_class>0</number_of_rows_business_class>
+			<number_of_rows_first_class>0</number_of_rows_first_class>			
+			<pitch_economy_class unit="m">0.81</pitch_economy_class>
+			<pitch_business_class unit="m">0.0</pitch_business_class>
+			<pitch_first_class unit="m">0.0</pitch_first_class>
+			<width_economy_class unit="m">0.48</width_economy_class>
+			<width_business_class unit="m">0.0</width_business_class>
+			<width_first_class unit="m">0.0</width_first_class>
+			<distance_from_wall_economy_class unit="m">0.1</distance_from_wall_economy_class>
+			<distance_from_wall_business_class unit="m">0.0</distance_from_wall_business_class>
+			<distance_from_wall_first_class unit="m">0.0</distance_from_wall_first_class>
+		</detailed_data>
+    </configuration>
+</jpad_config>

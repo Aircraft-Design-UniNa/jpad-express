@@ -1,0 +1,8 @@
+configurations {
+	compile
+	runtime
+}
+
+dependencies {
+	compile group: 'org.jscience', name: 'jscience', version: '4.3.1'
+}
