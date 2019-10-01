@@ -68,4 +68,4 @@ Before running a configuration do check the panels on the right pane. Explore th
 
 **Design of Aircraft and Flight technologies**
 
-<img src="https://github.com/Aircraft-Design-UniNa/jpad/wiki/images/Logo_DAF_Flat-Elevator.png" width="400"/>
+<img src="https://github.com/Aircraft-Design-UniNa/jpad-express/Logo_DAF_Flat-Elevator.png" width="400"/>
