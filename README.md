@@ -1,4 +1,4 @@
-# JPAD, a Java Application Program Interface for Aircraft Designers (Express reslease)
+# JPAD, a Java Application Program Interface for Aircraft Designers (Express release)
 
 JPAD is a Java software library containing classes and utility functions that can be used to build software systems. 
 
