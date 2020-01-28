@@ -2261,7 +2261,7 @@ public class AircraftAndComponentsViewPlotUtils {
 		//-----------------------------------------------------------
 		// CREATING SEATS
 		for(int i = 0; i < aircraft.getCabinConfiguration().getDesignPassengerNumber(); i++) {
-			XYSeries seat = new XYSeries("Seat NÂ° " + (i+1), false);
+			XYSeries seat = new XYSeries("Seat N° " + (i+1), false);
 			seat.add(
 					aircraft.getCabinConfiguration().getSeatsActualXCoordinates().get(i).doubleValue(SI.METER), 
 					aircraft.getCabinConfiguration().getSeatsActualYCoordinates().get(i).doubleValue(SI.METER)

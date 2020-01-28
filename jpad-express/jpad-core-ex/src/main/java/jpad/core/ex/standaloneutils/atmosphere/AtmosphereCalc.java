@@ -10,7 +10,7 @@ import javax.measure.unit.SI;
 import org.jscience.physics.amount.Amount;
 
 /**
- * Hold atmosphere model and sea level constants (temperature = 15 Â°C).
+ * Hold atmosphere model and sea level constants (temperature = 15 °C).
  * Everything is given in SI units.
  * @author Lorenzo Attanasio
  *

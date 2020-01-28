@@ -37,9 +37,9 @@ public class MyXmlTree {
         	<Mach_number from="input" unit="" varName="_machCurrent">0.4300</Mach_number>
         	<Pressure from="output" unit="Pa" varName="_pressure">47217.60476</Pressure>
         	<Pressure_differential from="output" unit="Pa" varName="_maxDeltaP">32283.79971</Pressure_differential>
-        	<Density from="output" unit="kg/mÂ³" varName="_density">0.66011</Density>
+        	<Density from="output" unit="kg/m³" varName="_density">0.66011</Density>
         	<Temperature from="output" unit="K" varName="_temperature">249.18678</Temperature>
-        	<DynamicViscosity from="output" unit="PaÂ·s" varName="_mu">0.000016610284600104726</DynamicViscosity>
+        	<DynamicViscosity from="output" unit="Pa·s" varName="_mu">0.000016610284600104726</DynamicViscosity>
         	<Speed from="output" unit="m/s" varName="_speed">136.07423</Speed>
     	</Operating_Conditions>
     	<AIRCRAFT> : level 1
